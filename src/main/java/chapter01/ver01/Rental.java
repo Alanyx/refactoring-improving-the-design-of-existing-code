@@ -1,19 +1,27 @@
 package chapter01.ver01;
 
 public class Rental {
-	private Movie _movie; // 影片
-	private int _daysRented; // 租期
 
-	public Rental(Movie movie, int daysRented) {
-		_movie = movie;
-		_daysRented = daysRented;
-	}
+    /**
+     * 影片
+     */
+    private Movie movie;
 
-	public int getDaysRented() {
-		return _daysRented;
-	}
+    /**
+     * 租期
+     */
+    private int daysRented;
 
-	public Movie getMovie() {
-		return _movie;
-	}
+    public Rental(Movie movie, int daysRented) {
+        this.movie = movie;
+        this.daysRented = daysRented;
+    }
+
+    public int getDaysRented() {
+        return daysRented;
+    }
+
+    public Movie getMovie() {
+        return movie;
+    }
 }
